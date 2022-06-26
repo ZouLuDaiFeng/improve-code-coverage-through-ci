@@ -14,8 +14,15 @@ jobs:
           # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
 
+      - name: Setup Python
+        uses: actions/setup-python@master
+        with:
+          python-version: 3.7
+      - name: Generate coverage report
+        run: |
+          pip install pytest
+          pip install pytest-cov
+          pytest --cov=./ --cov-report=xml
 
       - name: Check code coverage
         uses: codecov/codecov-action@v2
-        with:
-          directory: tests
