@@ -17,3 +17,5 @@ jobs:
 
       - name: Check code coverage
         uses: codecov/codecov-action@v2
+        with:
+          files: tests/*
