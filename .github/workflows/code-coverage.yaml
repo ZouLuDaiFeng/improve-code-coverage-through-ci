@@ -22,7 +22,7 @@ jobs:
         run: |
           pip install pytest
           pip install pytest-cov
-          pytest --cov=./tests/test-calc.py --cov-report=xml
+          pytest --cov=. --cov-report=xml
 
       - name: Check code coverage
         uses: codecov/codecov-action@v2
