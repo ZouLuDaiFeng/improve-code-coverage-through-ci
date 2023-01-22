@@ -1,2 +1,2 @@
-# -improve-code-coverage-thorugh-ci
- improve code coverage thorugh ci
+# -improve-code-coverage-through-ci
+ improve code coverage through ci
